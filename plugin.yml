@@ -1,0 +1,22 @@
+name: LightningTeleport
+author: Johan "Zephyyrr" Fogelström
+main: swe.kbk.LightningTeleport.LightningTeleport
+version: 0.1
+website: http://www.kbkompaniet.se
+
+
+commands:
+  lightningtp:
+    description: Teleport to the destination in style!
+    usage: /lightningtp <destination>
+    aliases: ltp
+    permission: lightningtp.tp
+
+permissions:
+  lightningtp.*:
+    description: Gives access to all LightningTeleport commands
+    children:
+      lightningtp.tp: true
+  lightningtp.tp:
+    description: Allows you to teleport in style.
+    default: op
